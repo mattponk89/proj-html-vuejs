@@ -1,34 +1,101 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* SEZIONE HEADER */
+header{
+  color: white;
+  background-color: #0f1164;
 }
+header .navbar{
+  background-size:70%;
+  background-repeat: no-repeat;
+  background-image:url(../img/header-bg.svg);
+  padding: 2rem;
+}
+header .navbar img {
+  width: 2rem;
+  margin-right: 2rem;
+}
+header .navbar a {
+  color: white;
+  padding: 0;
+  margin: 0 5px;
+}
+header .myBtn{
+  margin-left: 2rem;
+  border: 1px solid #0f1164;
+  color: #0f1164;
+  font-weight: bold;
+}
+header .navbar svg{
+  margin-right: 10px;
 
-/* classi flex */
-.dFlex{
-  display: flex;
 }
-.flex-dir-col{
-  flex-direction:column;
+header .navbar li:hover a{
+  border-bottom: 1px solid white;
+  padding-left: 0;
+  padding-right: 0;
 }
-.flex-jc-center{
-  justify-content: center;
+header .hero{
+  height: 600px;
+  text-align: center;
+  background-image: url("../img/home-bg-3.svg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.flex-jc-space-b{
-  justify-content: space-between;
+header .hero .heroMessage h1{
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
-.flex-jc-space-a{
-  justify-content: space-around;
+header .hero button{
+  margin-top: 20px;
 }
-.flex-jc-start{
-  justify-content: flex-start;
+header .hero img{
+  height: 600px;
 }
-.flex-jc-end{
-  justify-content: flex-end;
+/* SEZIONE HEADER END */
+/* SEZIONE MAIN */
+main .boxData{
+  padding: 50px;
+  border-top: 1px solid lightgrey;
 }
-.flex-align-center{
-  align-items: center;
+main .boxData:not(:last-of-type){
+  border-right: 1px solid lightgrey;
 }
-.align-self-end{
-  align-self: flex-end;
+main .smile{
+  height: 500px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
+main .smile .smileImg{
+  height: 500px;
+}
+main .chatBox{
+  text-align: center;
+  padding:20px 80px;
+}
+main .chatBox .chatImg{
+  height: 100px;
+}
+main .chatBox h4{
+  font-size: 2.5rem;
+}
+main .chatBox h4,
+main .chatBox p,
+main .chatBox button{
+  margin-top: 30px;
+}
+main .myBtnDue{
+  background-color: #f76835;
+  border: 1px solid #f76835;
+  color: white;
+  font-weight: bold;
+}
+main .skill{
+  text-align: center;
+  background-color: #0f1164;
+  height: 500px;
+  color: white;
+  padding-top: 80px;
+}
+/* SEZIONE MAIN END */
