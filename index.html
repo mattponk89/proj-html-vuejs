@@ -23,29 +23,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <li class="nav-item" v-for="item in menu">
+                  <a class="nav-link" aria-current="page" href="#">{{item}}</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Service
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Journal</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
-                </li>
+
               </ul>
               <div class="d-flex align-items-center">
                 <div><svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-headphones" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -57,6 +38,7 @@
             </div>
           </div>
         </nav>
+
         <div class="hero">
           <div class="container-fluid">
             <div class="row align-items-center justicy-content-center">
@@ -75,8 +57,8 @@
       </header>
       <main>
         <div class="container">
-          <div class="row">
-            <h6>Available services</h3>
+          <div class="row services">
+            <h6>Available services</h6>
             <div class="col boxData">
               <h2>
                 Answering phone calls
@@ -122,20 +104,160 @@
             </div>
           </div>
         </div>
-          <div class="container-fluid">
+        <div class="skill">
+          <div class="container">
 
-            <div class="row skill">
+            <div class="row">
               <div class="col">
                 <h6>Donec est tristique eu massa pellentesque.</h6>
                 <h2>Highly-skilled, independent <br> professional freelancer.</h2>
                 <button class="btn btn-outline-success btn-lg btn-light myBtnDue" type="submit">What is a VA exactly?</button>
               </div>
             </div>
+            <div class="row list">
+              <div class="col scheda">
+                <div class="row">
+                  <div class="col-md-2">
+                    1.
+                  </div>
+                  <div class="col-md-10">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    <a href="#">Learn more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col scheda">
+                <div class="row">
+                  <div class="col-md-2">
+                    2.
+                  </div>
+                  <div class="col-md-10">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    <a href="#">Learn more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col scheda">
+                <div class="row">
+                  <div class="col-md-2">
+                    3.
+                  </div>
+                  <div class="col-md-10">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    <a href="#">Learn more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
-
+        </div>
+        <div class="container brand">
+          <div class="row">
+            <div class="title-brand">
+              Trusted by these amazing brands
+            </div>
+            <div class="col">
+              <img src="img/brand-1.jpg" alt="">
+            </div>
+            <div class="col">
+              <img src="img/brand-2.jpg" alt="">
+            </div>
+            <div class="col">
+              <img src="img/brand-3.jpg" alt="">
+            </div>
+            <div class="col">
+              <img src="img/brand-4.jpg" alt="">
+            </div>
+            <div class="col">
+              <img src="img/brand-5.jpg" alt="">
+            </div>
+          </div>
+          <div class="row prof">
+            <div class="col d-flex align-items-center">
+              <div class="">
+                <img class="icona" src="img/icon-2-2x.png" alt="">
+                <h2>
+                  Professional who works to <br> help with your business.
+                </h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="btn btn-outline-success btn-lg btn-light myBtnDue" type="submit">What is a VA exactly</button>
+              </div>
+            </div>
+            <div class="col">
+              <img class="woman-pc" src="img/info-8-2x.png" alt="">
+            </div>
+          </div>
+          <div class="row delegate">
+            <div class="col scheda">
+              <div class="row">
+                <div class="col-md-1">
+                  1.
+                </div>
+                <div class="col-md-11*">
+                  <h5>Learn to delegate</h5>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  <a href="#">Learn more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col scheda">
+              <div class="row">
+                <div class="col-md-1">
+                  1.
+                </div>
+                <div class="col-md-11">
+                  <h5>Reduce labor costs</h5>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  <a href="#">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
       <footer>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="img/logo.png" alt="" class="d-inline-block align-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item" v-for="item in menu">
+                  <a class="nav-link" aria-current="page" href="#">{{item}}</a>
+                </li>
 
+              </ul>
+              <div class="d-flex align-items-center">
+                <div><svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-headphones" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8 3a5 5 0 0 0-5 5v4.5H2V8a6 6 0 1 1 12 0v4.5h-1V8a5 5 0 0 0-5-5z"/>
+                <path d="M11 10a1 1 0 0 1 1-1h2v4a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3zm-6 0a1 1 0 0 0-1-1H2v4a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-3z"/>
+              </svg>1.800.123.4567</div>
+                <button class="btn btn-outline-success btn-lg btn-light myBtn" type="submit">Get a free consultation</button>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <div class="hero">
+          <div class="container">
+            <div class="row align-items-center justicy-content-center">
+              <div class="col-7 heroMessage">
+                <h1>Independent professional who works remotely to help with your business.</h1>
+                <button class="btn btn-outline-success btn-lg btn-light myBtn" type="submit">What is VA exactly?</button>
+                <div class="copy">
+                  &copy; Copyright 2012-2020 | Avada Theme by <a href="#">ThemeFusion</a> | All rights Reserved | Powered by <a href="#">WordPress</a>
+                </div>
+              </div>
+              <div class="col-5">
+              </div>
+            </div>
+          </div>
+
+        </div>
       </footer>
     </div>
       <script src="js/main.js" charset="utf-8"></script>
