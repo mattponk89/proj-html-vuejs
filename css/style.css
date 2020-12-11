@@ -29,6 +29,8 @@ header{
   border: 1px solid #0f1164;
   color: #0f1164;
   font-weight: bold;
+  padding-left: 30px;
+  padding-right: 30px;
 }
  .navbar svg{
   margin-right: 10px;
@@ -64,10 +66,10 @@ header .hero{
 /* SEZIONE MAIN */
 main .boxData{
   padding: 50px;
-  border-top: 1px solid lightgrey;
+  border-top: 2px solid lightgrey;
 }
 main .boxData:not(:last-of-type){
-  border-right: 1px solid lightgrey;
+  border-right: 2px solid lightgrey;
 }
 main .services{
   margin-top: 80px
@@ -125,6 +127,8 @@ main .myBtnDue{
   border: 1px solid #f76835;
   color: white;
   font-weight: bold;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 main .skill{
   text-align: center;
@@ -145,10 +149,21 @@ main .list{
 }
 main .scheda{
   background-color: #0f1164;
-  padding: 30px;
+  padding: 50px 30px;
   margin: 0 20px;
   color: white;
   border-radius: 5px;
+  overflow: hidden;
+}
+main .list .scheda{
+  background-color: #040543;
+}
+main .scheda .circleQuarter{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  position: absolute;
+
 }
 main .scheda a {
   margin-top: 15px;
@@ -179,6 +194,7 @@ main .prof .woman-pc{
 }
 main .delegate{
   text-align: left;
+  margin-bottom: 60px;
 }
 main .delegate a{
   display: block;
@@ -187,6 +203,13 @@ main .delegate a{
 /* SEZIONE FOOTER */
 footer{
   background-color: #0f1164;
+  color: white;
+}
+footer .navbar{
+  padding-top: 70px;
+}
+footer .navbar .myBtn{
+  background-color: #040543;
   color: white;
 }
 footer a{
@@ -199,12 +222,13 @@ footer .hero{
   height: 400px;
   text-align: left;
   background-image: url("../img/home-bg-3.svg");
-  background-size:100%;
+  background-size:cover;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
 }
 footer .copy{
   margin-top: 30px;
+  font-size: 14px;
 }
 /* SEZIONE FOOTER END */
 /* SEZIONE BUTTON */
@@ -214,6 +238,10 @@ header .myBtn:hover{
   background-color: #040543;
   border-color:  #040543;
   color: white;
+}
+footer .navbar .myBtn:hover{
+  background-color: white;
+  color: #040543;
 }
 .dropUp{
   position: fixed;
@@ -232,7 +260,7 @@ header .myBtn:hover{
 .dropUp .dropUpMenu{
   position: absolute;
   padding: 15px;
-  top: -260px;
+  top: -210px;
   right: 0;
   width: 250px;
   height: 200px;
